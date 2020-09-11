@@ -15,7 +15,7 @@ const dbOptions: ConnectionOptions = {
 const dbUri = `mongodb+srv://${dbUser}:${dbPassword}@${dbHost}/${dbName}?retryWrites=true&w=majority`;
 mongoose.connect(dbUri, dbOptions);
 
-const connection = mongoose.connection;
+const connection = mongoose.connection; 
 
 connection.once('open', () => {
     console.log('Database connection stablished');

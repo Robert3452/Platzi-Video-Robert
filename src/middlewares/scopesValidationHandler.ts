@@ -5,7 +5,7 @@ const scopesValidationHandler = (allowedScopes: string[]) => {
     return (req: Request, res: Response, next: NextFunction) => {
 
         const tokenData: any = req.user;
-
+        
         if (!tokenData || (!tokenData.scopes && !tokenData))
             next(boom.unauthorized('Missing scopes'));
 

@@ -43,7 +43,6 @@ export const createMovie = async (req: Request, res: Response, next: NextFunctio
             message: 'movie created'
         })
     } catch (error) {
-        // res.json(error)
         next(error);
     }
 }
