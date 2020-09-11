@@ -13,12 +13,12 @@ export interface IMovie extends Document {
 }
 
 const movieSchema = new Schema({
-    title: { type: String, maxlength: 30 },
+    title: { type: String, maxlength: 30, required: true },
     year: { type: Number, min: 1888, max: 3000 },
     cover: { type: String },//uri
     description: { type: String, maxlength: 300 },
     duration: { type: Number, min: 1, max: 300 },
-    contentRating: { type: Number, max: 5 },
+    contentRating: { type: String, maxlength: 5 },
     source: { type: String },//uri
     tags: { type: [String] }
 

@@ -10,7 +10,6 @@ const config = {
     authJwtSecret: process.env.AUTH_JWT_SECRET,
     publicApiKeysToken: process.env.PUBLIC_API_KEYS_TOKEN,
     adminApiKeysToken: process.env.ADMIN_API_KEYS_TOKEN
-
 }
 
 export default config;
