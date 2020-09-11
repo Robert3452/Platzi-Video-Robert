@@ -4,6 +4,10 @@ import config from './config';
 import routes from './routes'
 import { logErrors, wrapErrors, errorHandler } from './middlewares/errorHandler';
 import notFoundHandler from './middlewares/notFoundHandler';
+import passport from 'passport';
+//passport middlewares
+import './auth/strategies/basic';
+import './auth/strategies/jwt';
 
 const app = express();
 //Settings
@@ -14,6 +18,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // middlewares
+app.use(passport.initialize());
 
 //routes
 app.use('/api', routes);

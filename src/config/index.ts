@@ -7,7 +7,7 @@ const config = {
     dbPassword: process.env.DB_PASSWORD,
     dbHost: process.env.DB_HOST,
     dbName: process.env.DB_NAME,
-    authJwtSecret: process.env.AUTH_JWT_SECRET,
+    authJwtSecret: process.env.AUTH_JWT_SECRET || "secret",
     publicApiKeysToken: process.env.PUBLIC_API_KEYS_TOKEN,
     adminApiKeysToken: process.env.ADMIN_API_KEYS_TOKEN
 }
