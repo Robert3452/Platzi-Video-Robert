@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
-import UserMoviesQueries from '../queries/UserMovie.queries';
+import UserMoviesQueries from '../utils/queries/UserMovie.queries';
 
 const userMoviesQueries = new UserMoviesQueries();
 /** 
@@ -24,7 +24,7 @@ export const getUserMovies = async (req: Request, res: Response, next: NextFunct
 export const addUserMovie = async (req: Request, res: Response, next: NextFunction) => {
     const { body: userMovie } = req;
     try {
-        const createdUserMovieId = await userMoviesQueries.store({ userMovie })
+        const createdUserMovieId = await userMoviesQueries.store( userMovie )
         res.status(201).json({
             data: createdUserMovieId,
             message: 'user movie created',

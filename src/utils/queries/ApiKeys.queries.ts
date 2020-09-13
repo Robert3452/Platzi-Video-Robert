@@ -1,4 +1,4 @@
-import Scope, { IScope } from '../models/Scope';
+import Scope, { IScope } from '../../models/Scope';
 import CrudAttributes from './queries';
 
 export default class ApiKeyQueries implements CrudAttributes<IScope>{

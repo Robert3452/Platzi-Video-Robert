@@ -1,8 +1,8 @@
 // set DEBUG=app:* && node ./dist/scripts/seedApiKeys.js
 import chalk from 'chalk';
 import crypto from 'crypto';
-import Scope from '../models/Scope';
-import '../database';
+import Scope from '../../models/Scope';
+import '../../database';
 const debug = require('debug')('app:scripts:api-keys');
 
 const adminScopes = [

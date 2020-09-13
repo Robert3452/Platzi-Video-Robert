@@ -13,6 +13,7 @@ const userSchema = new Schema({
     email: { type: String },
     password: { type: String, minlength: 8, },
     isAdmin: { type: Boolean },
+    apiKeyToken: { type: String },//createPRoviderUserSchema
 
 })
 
@@ -27,7 +28,7 @@ userSchema.pre<IUser>('save', async function (next) {
 
 userSchema.methods.comparePasswords = async function (password: string): Promise<boolean> {
 
-    const signedIn =  await bcrypt.compare(password, this.password);
+    const signedIn = await bcrypt.compare(password, this.password);
     return signedIn
 }
 

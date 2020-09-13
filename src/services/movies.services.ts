@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import MovieQueries from '../queries/Movie.queries'
+import MovieQueries from '../utils/queries/Movie.queries'
 import boom from '@hapi/boom';
 
 const movieQueries = new MovieQueries();

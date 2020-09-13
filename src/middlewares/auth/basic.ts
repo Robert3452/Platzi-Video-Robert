@@ -1,7 +1,7 @@
 import passport from 'passport';
 import { BasicStrategy } from 'passport-http';
 import boom from '@hapi/boom';
-import UserQueries from '../queries/User.queries'
+import UserQueries from '../../utils/queries/User.queries'
 
 const basicStrategy = new BasicStrategy(async function (email, password, cb) {
     const userQueries = new UserQueries();

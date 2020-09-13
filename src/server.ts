@@ -6,8 +6,8 @@ import { logErrors, wrapErrors, errorHandler } from './middlewares/errorHandler'
 import notFoundHandler from './middlewares/notFoundHandler';
 import passport from 'passport';
 //passport middlewares
-import './auth/basic';
-import './auth/jwt';
+import './middlewares/auth/basic';
+import './middlewares/auth/jwt';
 
 const app = express();
 //Settings

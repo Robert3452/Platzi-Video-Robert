@@ -6,6 +6,6 @@ const router = Router();
 
 router.use('/movies', movies);
 router.use('/auth', profile);
-router.use('/user-movies', userMovies)
+router.use('/user-movies', userMovies);
 
 export default router;

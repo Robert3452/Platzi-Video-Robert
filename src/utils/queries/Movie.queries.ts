@@ -1,5 +1,5 @@
 import AtributesCrud from './queries';
-import Movie, { IMovie } from '../models/Movie';
+import Movie, { IMovie } from '../../models/Movie';
 
 class MovieQueries implements AtributesCrud<IMovie>{
     async store(json: object): Promise<IMovie> {

@@ -1,5 +1,5 @@
 import AtributesQueries from './queries';
-import UserMovie, { IUserMovie } from '../models/UserMovie';
+import UserMovie, { IUserMovie } from '../../models/UserMovie';
 
 class UserMovieQueries implements AtributesQueries<IUserMovie>{
     async store(json: object): Promise<IUserMovie> {

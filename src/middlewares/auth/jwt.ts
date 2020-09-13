@@ -1,9 +1,9 @@
 import passport from 'passport';
 
 import { Strategy, StrategyOptions, ExtractJwt } from 'passport-jwt'
-import config from '../config';
+import config from '../../config';
 import boom from '@hapi/boom';
-import UserQueries from '../queries/User.queries';
+import UserQueries from '../../utils/queries/User.queries';
 
 const opts: StrategyOptions = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),

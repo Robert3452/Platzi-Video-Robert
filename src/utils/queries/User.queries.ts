@@ -1,5 +1,5 @@
 import AtributesCrud from './queries';
-import User, { IUser } from '../models/User';
+import User, { IUser } from '../../models/User';
 
 
 class UserQueries implements AtributesCrud<IUser>{

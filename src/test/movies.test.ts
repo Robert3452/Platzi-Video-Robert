@@ -1,6 +1,6 @@
 import assert from 'assert'; //verificar la comparacion en los tests
 import proxyquire from 'proxyquire';//permite elegir en lugar de traer el paquete real nos trae un mock
-import { moviesMock, MoviesServiceMock, getMoviesMock } from '../mocks/movies';//importamos los mocks
+import { moviesMock, MoviesServiceMock, getMoviesMock } from '../utils/mocks/movies';//importamos los mocks
 import movieRoutes from '../routes/movies.routes'
 import testServer from './testServer';
 
